@@ -214,7 +214,7 @@ input[type="submit"]:hover {cursor: pointer;}
 
 .features li {
   height: 30px;
-  background-image: url(/public/images/Combined-Shape.svg);
+  background-image: url(/images/Combined-Shape.svg);
   background-repeat: no-repeat;
   padding-left: 30px;
 }
