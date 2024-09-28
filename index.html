@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/utility.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>WP Pusher checkout</title>
+</head>
+<body>
+    <header class="flex">
+        <div class="logo">
+            <img src="/public/images/wppusher-logo copy.png" alt="Logo">
+        </div>
+        <nav>
+            <ul class="bold flex">
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Learn more</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a class="active" href="">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section class="payment-info">
+                <form action="/submit" method="post">
+                    <div class="form-box-1">
+                        <h1>Checkout</h1>
+                    </div>
+
+                    <div class="form-box-2">
+                        <div class="title bold flex">
+                            <span>1</span> <h3>Your Basic Information</h3>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">First Name</span>
+                            <input type="text" placeholder="Jane" name="firstName" id="firstName" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Last Name</span>
+                            <input type="text" placeholder="Doe" name="lastName" id="lastName" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">E-mail</span>
+                            <input type="email" placeholder="janedoe@example.com" name="email" id="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-box-3">
+                        <div class="title bold">
+                            <span>2</span> <h3>Your Payment Information</h3>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Credit Card</span>
+                            <input type="number" placeholder="Card Number" name="creditCard" id="creditCard" required>
+                            <div class="card-desc flex">
+                                <p>MM / YY</p>
+                                <p>CVC</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-box-4">
+                        <input type="submit" value="Buy WP Pusher">
+                        <p class="flex">
+                            <span>?</span>
+                            <span class="bold">Need any help?</span> Don't hesitate to <a href="#">contact support!</a>
+                        </p>
+
+                        <img src="/public/images/powered_by_stripe.svg" alt="">
+                    </div>
+                </form>
+            </section>
+            <section>
+                <div class="subscription-info">
+                    <div class="package">
+                        <h3>Freelancer</h3>
+                        <div class="price flex">
+                            <p class="regular">$</p>
+                            <p class="light">99</p>
+                            <p>/ year</p>
+                        </div>
+                        <p>Automatically renews <br> after 1 year</p>
+                    </div>
+
+                    <div class="features">
+                        <ul>
+                            <li>Use on <span class="bold">5</span> client sites</li>
+                            <li>Private repositories</li>
+                            <li>Email support</li>
+                        </ul>
+                    </div>
+
+                    <div class="ads">
+                        <p>Need <span class="bold">20</span> client sites?</p>
+                        <p class="bold"><a href="#">Switch to the Agency plan.</a></p>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="review">
+                        <p>FTP is horrible to deal with. <br><span class="bold">WP Pusher</span> solves that issue, <br>and the customer support is awesome!</p>
+                        <div class="user-info flex">
+                            <img src="/public/images/Bitmap.svg" alt=""><span class="bold">Kirk Beard</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy2018 WP Pusher IVS - <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
